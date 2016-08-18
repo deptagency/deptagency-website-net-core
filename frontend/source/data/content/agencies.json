@@ -1,0 +1,47 @@
+[
+  {
+    "name": "Tam Tam",
+    "category": "Digital Craftsmanship",
+    "link": "https://www.tamtam.nl/",
+    "description": "We create awesome digital experiences that make people smile.",
+    "linkText": "tamtam.nl",
+    "image": "/images/agencies/tamtam-1.jpg",
+    "secondaryImage": "/images/agencies/tamtam-2.jpg"
+  },
+  {
+    "name": "a friend of mine",
+    "category": "Campaigns &amp; Social",
+    "link": "http://afriendofmine.nl/",
+    "description": "We’re a fast growing digital agency with a social heart, based in Amsterdam.",
+    "linkText": "afriendofmine.nl",
+    "image": "/images/agencies/afriendofmine-1.jpg",
+    "secondaryImage": "/images/agencies/afriendofmine-2.jpg"
+  },
+  {
+    "name": "Second Degree",
+    "category": "LinkedIn Marketing",
+    "link": "http://www.seconddegree.nl/",
+    "description": "We are the first LinkedIn marketing agency in the world, connecting brands and professionals via B2B marketing.",
+    "linkText": "seconddegree.nl",
+    "image": "/images/agencies/seconddegree-1.jpg",
+    "secondaryImage": "/images/agencies/seconddegree-2.jpg"
+  },
+  {
+    "name": "Expand Online",
+    "category": "Data Driven Marketing",
+    "link": "https://www.expandonline.nl/",
+    "description": "We are a digital marketing agency combining advertising, SEO and data driven marketing to improve your marketing ROI.",
+    "linkText": "expandonline.nl",
+    "image": "/images/agencies/expand-1.jpg",
+    "secondaryImage": "/images/agencies/expand-2.jpg"
+  },
+  {
+    "name": "Building Blocks",
+    "category": "Digital Craftsmanship",
+    "link": "http://www.building-blocks.com/",
+    "description": "We bring digital experiences to life, building complex websites and digital apps for global organisations.",
+    "linkText": "building-blocks.com",
+    "image": "/images/agencies/buildingblocks-1.jpg",
+    "secondaryImage": "/images/agencies/buildingblocks-2.jpg"
+  }
+]

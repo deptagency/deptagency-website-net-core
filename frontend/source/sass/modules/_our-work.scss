@@ -1,0 +1,9 @@
+.our-work {
+  width: 100%;
+  overflow: hidden;
+  margin: 0 0 90px;
+
+  @media #{ $screen-medium-and-up } {
+    margin: 0 0 180px;
+  }
+}

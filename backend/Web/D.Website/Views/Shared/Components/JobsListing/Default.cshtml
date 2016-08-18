@@ -1,0 +1,30 @@
+﻿@model D.Models.Vacancies.JobsResponse
+
+@for (int i = 0; i < Model.Jobs.Count(); i++)
+{
+    if (i % 8 == 0 && i != 0)
+    {
+        @Html.Raw("</ul></div>")
+    }
+    if (i % 8 == 0)
+    {
+        @Html.Raw("<div class=\"jobs__slide\"> <ul class=\"jobs__list\">")
+    }
+    var currentJob = Model.Jobs[i];
+    var url = currentJob.Metadata.FirstOrDefault(m => m.Name == "AgencyJobURL")?.Value ?? currentJob.AbsoluteUrl;
+    var department = currentJob.Metadata.FirstOrDefault(m => m.Name == "Department")?.Value ?? string.Empty;
+
+    <li class="jobs__item">
+        <a href="@url" target="_blank" class="jobs__link">
+            <span class="jobs__role-wrapper">
+                <span class="jobs__role">@currentJob.Title</span>
+            </span>
+            <small class="jobs__office">@currentJob.Location.Name</small>
+        </a>
+    </li>
+
+        @if (i == Model.Jobs.Count() - 1 && i != 0)
+        {
+            @Html.Raw("</ul></div>")
+        }
+}

@@ -1,0 +1,12 @@
+{% if content.socials.length %}
+<div class="socials">
+    <h4 class="socials__title">Social and stuff</h4>
+    <ul class="socials__list">
+        {% for social in content.socials %}
+        <li class="socials__item">
+            <a class="socials__link" href="{{ social.link }}" target="_blank">{{ social.network }}</a>
+        </li>
+        {% endfor %}
+    </ul>
+</div>
+{% endif %}

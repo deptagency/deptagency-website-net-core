@@ -1,0 +1,275 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
+html._debug_page_ {
+  font-family: "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  background-color: #ECECEC;
+  color: #333333; }
+  html._debug_page_.dark {
+    background-color: #333333;
+    color: #ECECEC; }
+  html._debug_page_ ._project-info {
+    max-width: 740px;
+    padding: 20px 40px;
+    margin: 40px auto; }
+    html._debug_page_ ._project-info code {
+      font-family: consolas, menlo, monaco, monospace !important;
+      font-size: 15px !important; }
+    html._debug_page_ ._project-info p {
+      margin-bottom: 1em; }
+    html._debug_page_ ._project-info a {
+      color: #ff5454;
+      padding-bottom: 1px;
+      border-bottom: 1px solid rgba(255, 84, 84, 0);
+      transition: border-bottom-color 200ms ease; }
+      html._debug_page_ ._project-info a:hover {
+        border-bottom-color: #ff5454; }
+  html._debug_page_ ._project-info__directory-list {
+    list-style: none; }
+    html._debug_page_ ._project-info__directory-list li:before {
+      content: "\2015";
+      position: relative;
+      left: -5px; }
+    html._debug_page_ ._project-info__directory-list ul {
+      margin-left: 20px; }
+      html._debug_page_ ._project-info__directory-list ul li:before {
+        content: "\2013";
+        position: relative;
+        left: -5px; }
+  html._debug_page_ ._project-info__code-doc {
+    font-size: 0; }
+    html._debug_page_ ._project-info__code-doc > div {
+      display: inline-block;
+      vertical-align: top;
+      font-size: 16px;
+      line-height: 18px; }
+    html._debug_page_ ._project-info__code-doc > div:nth-of-type(1) {
+      width: 25%; }
+    html._debug_page_ ._project-info__code-doc > div:nth-of-type(2) {
+      width: 75%;
+      padding-left: 20px; }
+  html._debug_page_ ._project-info__code-samp {
+    margin-bottom: 40px; }
+    html._debug_page_ ._project-info__code-samp samp {
+      display: block;
+      background-color: #2B2A27 !important;
+      font-family: consolas, menlo, monaco, monospace !important;
+      font-size: 15px !important;
+      color: #EDE0CE !important;
+      padding: 15px 10px !important; }
+    html._debug_page_ ._project-info__code-samp .function {
+      color: #FF5D38 !important; }
+    html._debug_page_ ._project-info__code-samp .string {
+      color: #BCD42A !important; }
+    html._debug_page_ ._project-info__code-samp .number {
+      color: #BCD42A !important; }
+    html._debug_page_ ._project-info__code-samp .boolean {
+      color: #FF5D38 !important; }
+    html._debug_page_ ._project-info__code-samp .null {
+      color: #FF5D38 !important; }
+    html._debug_page_ ._project-info__code-samp .key {
+      color: #EDE0CE !important; }
+    html._debug_page_ ._project-info__code-samp .tag {
+      color: #26A6A6 !important; }
+    html._debug_page_ ._project-info__code-samp .comment {
+      color: #808080 !important; }
+    html._debug_page_ ._project-info__code-samp p {
+      margin-top: 5px;
+      margin-left: 5px;
+      font-size: 10px !important;
+      color: #a39890; }
+      html._debug_page_ ._project-info__code-samp p code {
+        font-size: 10px !important; }
+  html._debug_page_ ._project-pages-list {
+    position: relative;
+    margin: 20px auto;
+    text-align: center;
+    padding: 20px 50px !important;
+    font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif !important;
+    font-size: 14px !important;
+    font-weight: 400 !important;
+    letter-spacing: .012em !important; }
+    html._debug_page_ ._project-pages-list .project-pages-list__disclaimer {
+      margin: 0 0 20px 0 !important;
+      color: #bbaea5;
+      font-size: .7em; }
+    html._debug_page_ ._project-pages-list ul {
+      margin: 0 0 0 40px !important;
+      padding: 0 !important; }
+    html._debug_page_ ._project-pages-list > ul {
+      display: inline-block;
+      text-align: left;
+      margin: 0 !important;
+      list-style: none !important; }
+    html._debug_page_ ._project-pages-list a {
+      position: relative;
+      padding: 4px 10px !important;
+      margin: 0 !important;
+      color: #ECECEC;
+      text-decoration: none !important;
+      z-index: 2;
+      transition-property: color; }
+      html._debug_page_ ._project-pages-list a, html._debug_page_ ._project-pages-list a:before {
+        transition: 150ms cubic-bezier(0.25, 0.46, 0.45, 0.94); }
+      html._debug_page_ ._project-pages-list a:before {
+        box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+        transition-property: background-color, left, right;
+        content: ' ';
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #2B2A27;
+        z-index: -1; }
+      html._debug_page_ ._project-pages-list a:hover:before {
+        background-color: #EDE0CE;
+        background-color: #ff5454;
+        left: -5px;
+        right: -5px; }
+    html._debug_page_ ._project-pages-list li {
+      position: relative;
+      height: 30px;
+      margin: 0 0 4px 0 !important;
+      padding: 0 !important;
+      list-style: none !important; }
+      html._debug_page_ ._project-pages-list li.pages-list__folder {
+        margin: 0 0 7px 6px !important;
+        font-size: .8em;
+        line-height: 1.4em;
+        padding: 5px 0 0 0 !important;
+        height: auto; }
+  html._debug_page_ .dark ._project-pages-list a {
+    color: #333; }
+    html._debug_page_ .dark ._project-pages-list a:before {
+      background-color: #ECECEC; }
+    html._debug_page_ .dark ._project-pages-list a:hover {
+      color: #2B2A27; }
+      html._debug_page_ .dark ._project-pages-list a:hover:before {
+        background-color: #ff5454; }
+  html._debug_page_ ._directories {
+    list-style: none; }
+    html._debug_page_ ._directories li:before {
+      content: "\2015";
+      position: relative;
+      left: -5px; }
+    html._debug_page_ ._directories ul {
+      margin-left: 20px; }
+      html._debug_page_ ._directories ul li:before {
+        content: "\2013";
+        position: relative;
+        left: -5px; }
+  html._debug_page_ ._styleguide__styleblock {
+    max-width: 960px;
+    padding: 20px 40px;
+    margin: 40px auto; }
+  html._debug_page_ ._styleguide__header {
+    position: relative;
+    margin: 0px 0 20px 0;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #cacaca; }
+  html._debug_page_ ._styleguide__title {
+    display: inline-block;
+    font-size: 2rem;
+    color: #333333; }
+  html._debug_page_ ._styleguide__disclaimer {
+    display: inline-block;
+    margin-top: 10px;
+    margin-left: 20px;
+    font-size: 1rem;
+    color: #bbaea5; }
+  html._debug_page_ .dark ._styleguide__title {
+    color: #efefef; }
+  html._debug_page_ ._styleguide__block-fonts > p {
+    display: block !important;
+    font-size: 25px !important;
+    margin-bottom: 20px !important; }
+  html._debug_page_ ._styleguide__svg-collection ul {
+    margin: 0;
+    padding: 0; }
+  html._debug_page_ ._styleguide__svg-collection li {
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+    display: inline;
+    display: inline-block;
+    background-color: #FFFFFF;
+    position: relative;
+    margin: 0 2em 2em 0;
+    vertical-align: top;
+    border: 1px solid #ccc;
+    padding: 1em 1em 3em 1em;
+    cursor: default; }
+    html._debug_page_ ._styleguide__svg-collection li h4 {
+      color: #333333;
+      margin: 0;
+      padding-bottom: 3px;
+      line-height: 1em;
+      font-size: 1em;
+      font-weight: normal;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      position: absolute;
+      left: 1em;
+      right: 1em;
+      bottom: 1em; }
+  html._debug_page_ ._svg-collection__container {
+    margin: 0;
+    width: 144px;
+    height: 144px;
+    position: relative;
+    background: #ccc url(data:image/gif;base64,R0lGODlhDAAMAIAAAMzMzP///yH/C1hNUCBEYXRhWE1QPD94cGFja2V0IGJlZ2luPSLvu78iIGlkPSJXNU0wTXBDZWhpSHpyZVN6TlRjemtjOWQiPz4gPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRhLyIgeDp4bXB0az0iQWRvYmUgWE1QIENvcmUgNS4wLWMwNjEgNjQuMTQwOTQ5LCAyMDEwLzEyLzA3LTEwOjU3OjAxICAgICAgICAiPiA8cmRmOlJERiB4bWxuczpyZGY9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkvMDIvMjItcmRmLXN5bnRheC1ucyMiPiA8cmRmOkRlc2NyaXB0aW9uIHJkZjphYm91dD0iIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtbG5zOnhtcE1NPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvbW0vIiB4bWxuczpzdFJlZj0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL3NUeXBlL1Jlc291cmNlUmVmIyIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M1LjEgV2luZG93cyIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDozQjk4OTI0MUY5NTIxMUUyQkJDMEI5NEFEM0Y1QTYwQyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDozQjk4OTI0MkY5NTIxMUUyQkJDMEI5NEFEM0Y1QTYwQyI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOjNCOTg5MjNGRjk1MjExRTJCQkMwQjk0QUQzRjVBNjBDIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjNCOTg5MjQwRjk1MjExRTJCQkMwQjk0QUQzRjVBNjBDIi8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+Af/+/fz7+vn49/b19PPy8fDv7u3s6+rp6Ofm5eTj4uHg397d3Nva2djX1tXU09LR0M/OzczLysnIx8bFxMPCwcC/vr28u7q5uLe2tbSzsrGwr66trKuqqainpqWko6KhoJ+enZybmpmYl5aVlJOSkZCPjo2Mi4qJiIeGhYSDgoGAf359fHt6eXh3dnV0c3JxcG9ubWxramloZ2ZlZGNiYWBfXl1cW1pZWFdWVVRTUlFQT05NTEtKSUhHRkVEQ0JBQD8+PTw7Ojk4NzY1NDMyMTAvLi0sKyopKCcmJSQjIiEgHx4dHBsaGRgXFhUUExIREA8ODQwLCgkIBwYFBAMCAQAAIfkEAAAAAAAsAAAAAAwADAAAAhaEH6mHmmzcgzJAUG/NVGrfOZ8YLlABADs=) top left repeat;
+    border: 1px solid #ccc;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center; }
+    html._debug_page_ ._svg-collection__container i {
+      display: inline-block;
+      text-indent: 200%;
+      white-space: nowrap;
+      overflow: hidden; }
+  html._debug_page_ .dark ._styleguide__svg-collection li {
+    background-color: #606060;
+    border: 1px solid #808080; }
+    html._debug_page_ .dark ._styleguide__svg-collection li h4 {
+      color: #efefef; }
+  html._debug_page_ .dark ._svg-collection__container {
+    background: #ccc url(data:image/gif;base64,R0lGODlhDAAMAIAAAEVFRSQkJCH5BAAAAAAALAAAAAAMAAwAAAIWhB+ph5ps3IMyQFBvzVRq3zmfGC5QAQA7) top left repeat;
+    border: 1px solid #808080; }
+
+/*
+
+    Styling for the debug log that prints out context data.
+    Can be injected anywhere so we use !important to make sure no style is overwritten.
+
+*/
+div._debug-data-log {
+  width: 100%        !important;
+  min-width: 600px       !important;
+  max-height: 400px       !important;
+  background-color: #2B2A27 !important;
+  font-family: consolas, menlo, monaco, monospace !important;
+  font-size: 12px        !important;
+  color: #9a9286     !important;
+  overflow: scroll      !important;
+  padding: 5px 10px    !important;
+  z-index: 999         !important;
+  text-align: left        !important; }
+  div._debug-data-log .function {
+    color: #FF5D38 !important; }
+  div._debug-data-log .string {
+    color: #26A6A6 !important; }
+  div._debug-data-log .number {
+    color: #BCD42A !important; }
+  div._debug-data-log .boolean {
+    color: #FF5D38 !important; }
+  div._debug-data-log .null {
+    color: #FF5D38 !important; }
+  div._debug-data-log .key {
+    color: #EDE0CE !important; }
+
+#__bs_notify__ {
+  top: auto !important;
+  bottom: 0 !important;
+  border-top-left-radius: 5px !important;
+  border-bottom-left-radius: 0px !important; }
+
+/*# sourceMappingURL=dev.css.map */

@@ -1,0 +1,20 @@
+<div class="accordion js-accordion">
+    {% for office in content.offices %}
+    <div class="accordion__item">
+        <div class="accordion__trigger">
+            <h4 class="office__title">{{ office.name }}</h4>
+            <small class="office__sub-title">{{ office.cities }}</small>
+        </div>
+        <div class="accordion__content">
+            {% for address in office.addresses %}
+            <address class="office__address">
+                <span class="office__city">{{ address.city }}</span><br>
+                <span class="office__phone">{{ address.phone }}</span><br>
+                {{ address.street }}<br>
+                {{ address.zipcpde }} {{ address.city }}<br>
+            </address>
+            {% endfor %}
+        </div>
+    </div>
+    {% endfor %}
+</div>

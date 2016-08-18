@@ -1,0 +1,22 @@
+.header {
+  margin-bottom: 50px;
+  position: relative;
+
+  @media #{ $screen-small-and-down } {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 500;
+    transition: transform .2s ease;
+    background: $color-white;
+    padding-bottom: 20px;
+
+    &.is-hidden {
+      transform: translateY(-100%);
+    }
+  }
+
+  @media #{ $screen-large-and-up } {
+    height: auto;
+  }
+}

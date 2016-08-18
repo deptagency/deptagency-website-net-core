@@ -1,0 +1,70 @@
+@charset "UTF-8";
+
+//	Vendor libs
+//      - styles from other sources (bower)
+
+@import "../../node_modules/slick-carousel/slick/slick.scss";
+
+//	Vendor overwrites
+
+@import "vendor/slick";
+
+//	Core
+//      - settings
+//      - mixins
+//      - helpers
+//      - html / body style
+
+@import "utils/mixins/conversion";
+@import "utils/vars/index";
+@import "utils/index";
+
+@import "layout/font-face";
+@import "layout/normalize";
+@import "layout/html";
+
+
+//	Elements
+// 		- Very small re-usable components used by modules
+
+@import "elements/address";
+@import "elements/heading";
+@import "elements/link";
+@import "elements/small";
+
+//@import "elements/button";
+//@import "elements/button-arrow";
+//@import "elements/figure";
+//@import "elements/list";
+//@import "elements/table";
+//@import "elements/form";
+//@import "elements/input";
+//@import "elements/select";
+//@import "elements/checkbox";
+//@import "elements/background-image";
+//@import "elements/text";
+
+
+
+//	Modules
+//		- Re-usable blocks consisting mostly of elements
+
+@import "modules/accordion";
+@import "modules/agencies";
+@import "modules/background";
+@import "modules/clients";
+@import "modules/footer";
+@import "modules/header";
+@import "modules/headquarter";
+@import "modules/image";
+@import "modules/intro";
+@import "modules/jobs";
+@import "modules/logo";
+@import "modules/navigation";
+@import "modules/office";
+@import "modules/our-agencies";
+@import "modules/our-work";
+@import "modules/slider";
+@import "modules/socials";
+@import "modules/work";
+

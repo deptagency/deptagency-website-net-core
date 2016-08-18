@@ -1,0 +1,194 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+@section googlecards
+{
+    <script type="application/ld+json">
+        {
+        "@@context": "http:\/\/schema.org",
+        "@@type": "Organization",
+        "url": "https:\/\/www.deptagency.com\/",
+        "sameAs": [
+        "https://blog.deptagency.com", "https://www.facebook.com/Dept-Agency-1118074194901179", "https://twitter.com/deptagency", "https://www.instagram.com/deptagency/", "https://www.linkedin.com/company/deptagency"
+        ],
+        "name": "Dept",
+        "logo": "http://www.deptagency.com/images/dept-logo.png"
+        }
+    </script>
+    <script type="application/ld+json">
+        {
+        "@@context": "http://schema.org",
+        "@@type": "LocalBusiness",
+        "@@id": "https://www.deptagency.com/",
+        "name": "Dept",
+        "address": {
+        "@@type": "PostalAddress",
+        "streetAddress": "Generaal Vetterstraat 66",
+        "addressLocality": "Amsterdam",
+        "addressRegion": "Noord-Holland",
+        "postalCode": "1059 BW",
+        "addressCountry": "NL"
+        },
+        "geo": {
+        "@@type": "GeoCoordinates",
+        "latitude": 52.340362,
+        "longitude": 4.844926
+        },
+        "url": "https://www.deptagency.com",
+        "logo": "http://www.deptagency.com/images/dept-logo.png",
+        "telephone": "+31157502000",
+        "contactPoint": [{
+        "@@type": "ContactPoint",
+        "telephone": "+31 (0)15 750 2000",
+        "contactType": "customer support"
+        }],
+        "openingHoursSpecification": [{
+        "@@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday"
+        ],
+        "opens": "08:00",
+        "closes": "18:00"
+        }, {
+        "@@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+        "Saturday",
+        "Sunday"
+        ],
+        "opens": "00:00",
+        "closes": "00:00"
+        }]
+        }
+    </script>
+}
+
+@section background
+{
+    <div class="background"></div>
+}
+
+@section header
+{
+    <header class="container header">
+        <div class="grid-12">
+            <div class="col-8 col-md-6">
+                <a class="logo" href="/">
+                    <svg class="svg-dept" width="108" height="28" viewBox="0 0 108 28" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M92.324 28.153h7.858V6.589H108V-.01H84.506v6.598h7.818v21.564zM66.452 12.905v-6.84h4.514c2.901 0 4.312 1.168 4.312 3.42 0 2.254-1.41 3.42-4.312 3.42h-4.514zm-7.858 15.248h7.858V18.98h4.675c7.052 0 11.767-2.977 11.767-9.494 0-6.518-4.714-9.495-11.767-9.495H58.594v28.162zm-27 0h21.398v-6.316h-13.54v-4.788h13.42v-6.035h-13.42V6.307h13.54V-.009H31.594v28.162zM7.858 21.595V6.55h2.499c5.52 0 8.906 1.93 8.906 7.523 0 5.592-3.386 7.523-8.906 7.523H7.858zM0 28.153h10.276c9.712 0 16.764-3.822 16.764-14.081C27.04 3.812 19.988-.01 10.276-.01H0v28.162z" fill="none" fill-rule="evenodd" />
+                    </svg>
+                </a>
+            </div>
+            <div class="col-4 col-md-6 navigation__container">
+                <label for="navigation" class="navigation__toggle"><span class="navigation__toggle__text">Menu</span></label>
+                <nav class="navigation js-navigation">
+                    <ul class="navigation__list">
+                        <li class="navigation__item"><a class="navigation__link" href="#" data-link="about-us">About us</a></li>
+                        <li class="navigation__item"><a class="navigation__link" href="#" data-link="agencies">Agencies</a></li>
+                        <li class="navigation__item"><a class="navigation__link" href="#" data-link="work">Work</a></li>
+                        <li class="navigation__item"><a class="navigation__link" href="#" data-link="join-us">Join us</a></li>
+                        <li class="navigation__item"><a class="navigation__link" href="#" data-link="contact">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+}
+    
+@Html.Partial("~/Views/Partials/Home/Intro.cshtml")
+@Html.Partial("~/Views/Partials/Home/OurAgencies.cshtml")
+@Html.Partial("~/Views/Partials/Home/OurWork.cshtml")
+@Html.Partial("~/Views/Partials/Home/OurClients.cshtml")
+@Html.Partial("~/Views/Partials/Home/JoinUs.cshtml")
+
+@section footer
+{
+<footer class="footer" data-section="contact">
+    <div class="container">
+        <div class="grid-12">
+            <div class="col-12 col-md-6">
+                <div class="footer__contact">
+                    <div class="footer__inner">
+                        <h3 class="footer__title">Let's talk</h3>
+                        <address class="headquarter"><span class="headquarter__title">Dept HQ <small class="headquarter__city">Amsterdam</small></span><br>Generaal Vetterstraat 66<br>1059 BW Amsterdam<br><a href="mailto:hello@deptagency.com">hello@deptagency.com</a><br><br><a href="tel:+31 (0)88 040 0888">+31 (0)88 040 0888</a><br></address>
+                        <div class="socials">
+                            <h4 class="socials__title">Social and stuff</h4>
+                            <ul class="socials__list">
+                                <li class="socials__item"><a class="socials__link" href="https://blog.deptagency.com" target="_blank">Blog</a></li>
+                                <li class="socials__item"><a class="socials__link" href="https://www.facebook.com/Dept-Agency-1118074194901179" target="_blank">Facebook</a></li>
+                                <li class="socials__item"><a class="socials__link" href="https://twitter.com/deptagency" target="_blank">Twitter</a></li>
+                                <li class="socials__item"><a class="socials__link" href="https://www.instagram.com/deptagency/" target="_blank">Instagram</a></li>
+                                <li class="socials__item"><a class="socials__link" href="https://www.linkedin.com/company/deptagency" target="_blank">LinkedIn</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6">
+                <div class="footer__offices">
+                    <div class="footer__inner">
+                        <h3 class="footer__title">Our agencies</h3>
+                    </div>
+                    <div class="accordion js-accordion">
+                        <div class="accordion__item">
+                            <div class="accordion__trigger">
+                                <h4 class="office__title">TamTam</h4>
+                                <small class="office__sub-title">Amsterdam, Rotterdam, Delft</small>
+                            </div>
+                            <div class="accordion__content">
+                                <address class="office__address"><span class="office__city">Amsterdam</span><br><span class="office__phone">+31 (0)15 750 2000</span><br>Generaal Vetterstraat 66<br>Amsterdam<br></address>
+                                <address class="office__address"><span class="office__city">Rotterdam</span><br><span class="office__phone">+31 (0)15 750 2000</span><br>Delftseplein 30C<br>Rotterdam<br></address>
+                                <address class="office__address"><span class="office__city">Delft</span><br><span class="office__phone">+31 (0)15 750 2000</span><br>Patrijsweg 80<br>Delft<br></address>
+                            </div>
+                        </div>
+                        <div class="accordion__item">
+                            <div class="accordion__trigger">
+                                <h4 class="office__title">a friend of mine</h4>
+                                <small class="office__sub-title">Amsterdam, Rotterdam</small>
+                            </div>
+                            <div class="accordion__content">
+                                <address class="office__address"><span class="office__city">Amsterdam</span><br><span class="office__phone">+31 (0) 20 223 8350</span><br>Veemkade 566<br>Amsterdam<br></address>
+                                <address class="office__address"><span class="office__city">Rotterdam</span><br><span class="office__phone">+31 (0) 20 223 8350</span><br>Delftseplein 30C<br>Rotterdam<br></address>
+                            </div>
+                        </div>
+                        <div class="accordion__item">
+                            <div class="accordion__trigger">
+                                <h4 class="office__title">Building Blocks</h4>
+                                <small class="office__sub-title">Manchester, Boston</small>
+                            </div>
+                            <div class="accordion__content">
+                                <address class="office__address"><span class="office__city">Manchester, UK</span><br><span class="office__phone">+44 (0)161 441 0600</span><br>1 Portland Street<br>Manchester, UK<br></address>
+                                <address class="office__address"><span class="office__city">Boston, USA</span><br><span class="office__phone">+1 (857)-702-0244</span><br>745 Atlantic Avenue<br>Boston, USA<br></address>
+                            </div>
+                        </div>
+                        <div class="accordion__item">
+                            <div class="accordion__trigger">
+                                <h4 class="office__title">Second Degree</h4>
+                                <small class="office__sub-title">RotterDam, Amsterdam</small>
+                            </div>
+                            <div class="accordion__content">
+                                <address class="office__address"><span class="office__city">Rotterdam</span><br><span class="office__phone">+31 (0) 10 846 4179</span><br>Westplein 12-14<br>Rotterdam<br></address>
+                                <address class="office__address"><span class="office__city">Amsterdam</span><br><span class="office__phone">+31 (0) 10 846 4179</span><br>Generaal Vetterstraat 66<br>Amsterdam<br></address>
+                            </div>
+                        </div>
+                        <div class="accordion__item">
+                            <div class="accordion__trigger">
+                                <h4 class="office__title">Expand Online</h4>
+                                <small class="office__sub-title">Rotterdam, Amsterdam</small>
+                            </div>
+                            <div class="accordion__content">
+                                <address class="office__address"><span class="office__city">Rotterdam</span><br><span class="office__phone">+31 (0)10 30 200 30</span><br>Delftseplein 30C<br>Rotterdam<br></address>
+                                <address class="office__address"><span class="office__city">Amsterdam</span><br><span class="office__phone">+31 (0)10 30 200 30</span><br>Generaal Vetterstraat 66<br>Amsterdam<br></address>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+}

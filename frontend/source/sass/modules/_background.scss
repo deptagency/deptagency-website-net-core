@@ -1,0 +1,30 @@
+.background {
+  display: none;
+  position: fixed;
+  height: 100%;
+  top: 0;
+  left: 20px;
+  right: 20px;
+  border-right: 1px solid $color-grey;
+
+  @media #{ $screen-medium-and-up } {
+    display: block;
+  }
+
+  @media only screen and (min-width: 1240px) {
+    left: 50%;
+    right: auto;
+    width: 100%;
+    max-width: 1200px;
+    margin-left: -600px;
+  }
+
+  &:after {
+    content: "";
+    width: 1px;
+    height: 100%;
+    position: fixed;
+    background: $color-grey;
+    left: 50%;
+  }
+}

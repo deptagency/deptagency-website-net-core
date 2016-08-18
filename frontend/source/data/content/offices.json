@@ -1,0 +1,99 @@
+[
+  {
+    "name": "TamTam",
+    "cities": "Amsterdam, Rotterdam, Delft",
+    "addresses": [
+      {
+        "city": "Amsterdam",
+        "phone": "+31 (0)15 750 2000",
+        "street": "Generaal Vetterstraat 66",
+        "zipcode": "1059 BW"
+      },
+      {
+        "city": "Rotterdam",
+        "phone": "+31 (0)15 750 2000",
+        "street": "Delftseplein 30C",
+        "zipcode": "3013 AA"
+      },
+      {
+        "city": "Delft",
+        "phone": "+31 (0)15 750 2000",
+        "street": "Patrijsweg 80",
+        "zipcode": "2289 EX"
+      }
+    ]
+  },
+  {
+    "name": "a friend of mine",
+    "cities": "Amsterdam, Rotterdam",
+    "addresses": [
+      {
+        "city": "Amsterdam",
+        "phone": "+31 (0) 20 223 8350",
+        "street": "Veemkade 566",
+        "zipcode": "1019 HM"
+      },
+      {
+        "city": "Rotterdam",
+        "phone": "+31 (0) 20 223 8350",
+        "street": "Delftseplein 30C",
+        "zipcode": "3013 AA"
+      }
+    ]
+  },
+  {
+    "name": "Building Blocks",
+    "cities": "Manchester, Boston",
+    "addresses": [
+      {
+        "city": "Manchester, UK",
+        "phone": "+44 (0)161 441 0600",
+        "street": "1 Portland Street",
+        "zipcode": "M1 3BE"
+      },
+      {
+        "city": "Boston, USA",
+        "phone": "+1 (857)-702-0244",
+        "street": "745 Atlantic Avenue",
+        "zipcode": "Boston, MA 02111"
+      }
+    ]
+  },
+  {
+    "name": "Second Degree",
+    "cities": "RotterDam, Amsterdam",
+    "addresses": [
+      {
+        "city": "Rotterdam",
+        "phone": "+31 (0) 10 846 4179",
+        "street": "Westplein 12-14",
+        "zipcode": "3016 BM"
+      },
+      {
+        "city": "Amsterdam",
+        "phone": "+31 (0) 10 846 4179",
+        "street": "Generaal Vetterstraat 66",
+        "zipcode": "1059 BW"
+      }
+    ]
+  },
+  {
+    "name": "Expand Online",
+    "cities": "Rotterdam, Amsterdam",
+    "addresses": [
+      {
+        "city": "Rotterdam",
+        "phone": "+31 (0)10 30 200 30",
+        "street": "Delftseplein 30C",
+        "zipcode": "3013 AA"
+      },
+      {
+        "city": "Amsterdam",
+        "phone": "+31 (0)10 30 200 30",
+        "street": "Generaal Vetterstraat 66",
+        "zipcode": "1059 BW"
+      }
+    ]
+  }
+]
+

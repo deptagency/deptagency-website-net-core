@@ -1,0 +1,45 @@
+@font-face {
+  font-family: 'Maison Neue';
+  font-weight: normal;
+  font-style: none;
+  src: url('/fonts/MaisonNeueWEB-Medium.woff2') format('woff2'),
+  url('/fonts/MaisonNeueWEB-Medium.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Maison Neue';
+  font-weight: normal;
+  font-style: italic;
+  src: url('/fonts/MaisonNeueWEB-MediumItalic.woff2') format('woff2'),
+  url('/fonts/MaisonNeueWEB-MediumItalic.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Maison Neue';
+  font-weight: bold;
+  font-style: none;
+  src: url('/fonts/MaisonNeueWEB-Bold.woff2') format('woff2'),
+  url('/fonts/MaisonNeueWEB-Bold.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Maison Neue';
+  font-weight: bold;
+  font-style: italic;
+  src: url('/fonts/MaisonNeueWEB-BoldItalic.woff2') format('woff2'),
+  url('/fonts/MaisonNeueWEB-BoldItalic.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Freight Display Pro';
+  font-weight: normal;
+  font-style: none;
+  src: url('/fonts/freight-display-w01-book.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Freight Display Pro';
+  font-weight: bold;
+  font-style: none;
+  src: url('/fonts/freight-display-w01-bold.ttf') format('truetype');
+}

@@ -1,0 +1,8 @@
+.slick {
+  &-list {
+    .slider--work &,
+    .slider--jobs & {
+      overflow: visible;
+    }
+  }
+}

@@ -1,0 +1,10 @@
+.idea
+node_modules/
+bower_components/
+build/
+*.log
+.DS_Store
+backend/.vs/
+obj/
+bin/
+packages/

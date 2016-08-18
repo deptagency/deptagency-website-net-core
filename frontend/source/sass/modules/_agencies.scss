@@ -1,0 +1,161 @@
+.agencies {
+  background: $color-black;
+  text-align: center;
+  margin: 0 0 20px;
+  font: 0/0 a;
+  position: relative;
+  overflow: hidden;
+
+  @media #{ $screen-medium-and-up } {
+    margin: 0 10px 20px 0;
+  }
+
+  &:before {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+    padding-top: 100%;
+
+    @media #{ $screen-medium-and-up } {
+      padding-top: 75%;
+    }
+
+    @media #{ $screen-large-and-up } {
+      padding-top: 70%;
+    }
+
+    @media #{ $screen-extra-large-and-up } {
+      padding-top: 65%;
+    }
+  }
+
+  &__video {
+    position: absolute;
+    width: auto;
+    height: 100%;
+    max-height: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity .3s ease;
+
+    .agencies:hover & {
+      opacity: 1;
+    }
+  }
+
+  &__image-container {
+    overflow: hidden;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+  }
+
+  &__image {
+    opacity: .3;
+    transition: opacity .3s ease;
+
+    .agencies:hover & {
+      opacity: 0;
+    }
+
+    &--secondary {
+      opacity: 0;
+
+      .agencies:hover & {
+        opacity: .3;
+      }
+    }
+  }
+
+  &__inner {
+    width: 100%;
+    padding: 0 20px;
+    position: absolute;
+    top: calc(50% - 40px);
+    left: 0;
+    display: block;
+    transition: top 250ms ease-out;
+
+    @media #{ $screen-small-and-down } {
+      top: calc(50% - 80px);
+    }
+
+    @media #{ $screen-medium-and-up } {
+      padding: 0;
+    }
+
+    .agencies:hover & {
+      top: calc(50% - 80px);
+    }
+  }
+
+  &__title {
+    color: $color-white;
+    font-size: 36px;
+    margin: 0 0 10px;
+    text-align: center;
+  }
+
+  &__category {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1.6rem;
+    line-height: 1;
+    font-family: $font-stack-primary;
+    text-align: center;
+  }
+
+  &__description,
+  &__link {
+    font-size: 1.6rem;
+    line-height: $font-line-height-body;
+    font-family: $font-stack-primary;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 250ms ease;
+    margin: 0;
+    padding: 0 60px;
+    color: $color-white;
+
+    @media #{ $screen-small-and-down } {
+      padding: 0 30px;
+      font-size: 4vw;
+      opacity: 1;
+    }
+
+    @media #{ $screen-medium-only } {
+      padding: 0 20px;
+      font-size: 1.4rem;
+    }
+
+    .agencies:hover & {
+      opacity: 1;
+    }
+  }
+
+  &__description {
+    display: inline-block;
+    position: absolute;
+    width: 100%;
+    top: calc(50% + 40px);
+    left: 0;
+
+    @media #{ $screen-medium-and-down } {
+      top: calc(50% + 30px);
+      line-height: 1.4;
+    }
+
+  }
+
+  &__link {
+    position: absolute;
+    left: 0;
+    bottom: 20px;
+    width: 100%;
+    color: #777;
+  }
+}

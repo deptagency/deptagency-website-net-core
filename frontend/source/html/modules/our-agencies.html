@@ -1,0 +1,31 @@
+<div class="our-agencies">
+    <div class="container" data-section="agencies">
+        <div class="grid-12">
+            <div class="col-12">
+                <h2>Our agencies</h2>
+            </div>
+        </div>
+        <div class="grid-12">
+            {% for agency in content.agencies %}
+            <div class="col-12 col-md-6">
+                <a href="{{ agency.link }}" target="_blank">
+                    <div class="agencies">
+                        <div class="agencies__image-container">
+                            <img class="agencies__image image--cover" src="{{ agency.image }}">
+                        </div>
+                            <div class="agencies__image-container">
+                                <img class="agencies__image agencies__image--secondary image--cover" src="{{ agency.secondaryImage }}">
+                            </div>
+                        <div class="agencies__inner">
+                            <h3 class="agencies__title">{{ agency.name }}</h3>
+                            <p class="agencies__category">{{ agency.category }}</p>
+                        </div>
+                        <p class="agencies__description">{{ agency.description }}</p>
+                        <p class="agencies__link">{{ agency.linkText }}</p>
+                    </div>
+                </a>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>

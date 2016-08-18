@@ -1,0 +1,16 @@
+%section-title {
+  font-size: 4.5rem;
+  line-height: 1.2;
+
+  @media #{ $screen-medium-and-up } {
+    font-size: 6rem;
+  }
+
+  @media #{ $screen-large-and-up } {
+    font-size: 6.6rem;
+  }
+
+  @media #{ $screen-extra-large-and-up } {
+    font-size: 7.6rem;
+  }
+}

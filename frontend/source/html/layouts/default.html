@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="{{ site.language }}" dir="{{ site.direction }}">
+
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+
+    <meta name="author" content="{{ project.author }}">
+    <meta name="description" content="{{ site.description }}">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+    <title>{{ site.title }}</title>
+
+    <!-- You can use open graph tags to customize link previews.
+ Learn more: https://developers.facebook.com/docs/sharing/webmasters -->
+    <meta property="og:url"           content="{{ site.url }}" />
+    <meta property="og:type"          content="website" />
+    <meta property="og:title"         content="{{ site.title }}" />
+    <meta property="og:description"   content="{{ site.description }}" />
+    <meta property="og:image"         content="{{ site.image }}" />
+
+    <link rel="icon" type="image/png" href="/images/favicon.png">
+
+    <!-- Style sheets -->
+    {% if project.debug %} <link rel="stylesheet" href="/css/dev.css"/> {% endif %}
+    <link rel="stylesheet" href="/css/main.css"/>
+
+    <script type='application/ld+json'>
+    {
+      "@context":"http:\/\/schema.org",
+      "@type":"Organization",
+      "url":"https:\/\/www.deptagency.com\/",
+      "sameAs":[
+        {% for social in content.socials %}"{{ social.link }}"{% if not loop.last %},{% endif %}{% endfor %}
+      ],
+      "name":"Dept",
+      "logo":"http://www.deptagency.com/images/dept-logo.png"
+    }
+    </script>
+
+    <script type="application/ld+json">
+    {
+      "@context": "http://schema.org",
+      "@type": "LocalBusiness",
+      "@id": "https://www.deptagency.com/",
+      "name": "Dept",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Generaal Vetterstraat 66",
+        "addressLocality": "Amsterdam",
+        "addressRegion": "Noord-Holland",
+        "postalCode": "1059 BW",
+        "addressCountry": "NL"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 52.340362,
+        "longitude": 4.844926
+      },
+      "url" : "https://www.deptagency.com",
+      "logo" : "http://www.deptagency.com/images/dept-logo.png",
+      "telephone": "+31157502000",
+      "contactPoint" : [{
+        "@type" : "ContactPoint",
+        "telephone" : "+31 (0)15 750 2000",
+        "contactType" : "customer support"
+      }],
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday"
+          ],
+          "opens": "08:00",
+          "closes": "18:00"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Saturday",
+            "Sunday"
+          ],
+          "opens": "00:00",
+          "closes": "00:00"
+        }
+      ]
+    }
+    </script>
+
+</head>
+
+
+<body {% if angularModule %}ng-app="{{ angularModule }}"{% endif %}>
+
+
+    {% if site.gtm and site.gtm != 'GTM-XXXX' %}
+
+        {% include "modules/gtm.html" %}
+
+    {% endif %}
+
+
+    {% include 'modules/background.html' %}
+    {% include 'modules/header.html' %}
+
+    <main role="main">
+
+        {% block content %}
+
+            <!-- content will be injected in this block -->
+
+        {% endblock %}
+
+    </main>
+
+
+
+    {% include "modules/footer.html" %}
+
+
+    <script src="/js/main.js" type="text/javascript"></script>
+
+    <!-- Facebook Pixel Code -->
+    <script>
+    !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+    n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+    document,'script','https://connect.facebook.net/en_US/fbevents.js');
+
+    fbq('init', '1438037483110240');
+    fbq('track', "PageView");
+    fbq('track', 'ViewContent');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=1438037483110240&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Facebook Pixel Code -->
+
+</body>
+
+<!-- name: {{ project.name }}, version: {{ project.version }} -->
+</html>

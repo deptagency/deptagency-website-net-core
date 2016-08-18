@@ -1,0 +1,26 @@
+.logo {
+  .navigation__status:checked ~ .header & {
+    position: absolute;
+    top: 0;
+    left: 20px;
+    z-index: 300;
+  }
+
+  svg {
+    height: 28px;
+    width: auto;
+    margin: 37px 0 0 20px;
+
+    path {
+      fill: $color-black;
+
+      .navigation__status:checked ~ .header & {
+        fill: $color-white;
+      }
+    }
+
+    @media #{ $screen-medium-and-up } {
+      margin: 54px 0 0;
+    }
+  }
+}

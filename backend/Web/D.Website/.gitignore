@@ -1,0 +1,9 @@
+*.suo
+packages/*
+scopes
+.tmp/
+.idea/
+.vs
+
+obj/
+bin/
